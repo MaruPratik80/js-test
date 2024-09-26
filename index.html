@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <script defer type="module" src="src/js/controller.js"></script>
+    <title>JS TEST</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="overview">
+          <!-- <img src="" alt="overview Photo" class="overview__img" />
+          <p class="overview__name">Name</p>
+          <p class="overview__email">Email</p>
+          <p class="overview__phone">Phone</p>
+          <p class="overview__username">Username</p> -->
+        </div>
+
+        <ul class="tab__list">
+          <!-- <li class="tab__item active" data-index="0">Profile</li>
+          <li class="tab__item" data-index="1">University</li> -->
+        </ul>
+      </header>
+      <main class="tab__content-box">
+        <section class="tab__content">Profile</section>
+
+        <section class="tab__content">
+          <div>
+            <div class="search">
+              <input type="search" class="search-input" list="university-name-list" />
+              <!-- <datalist id="university-name-list"> </datalist> -->
+            </div>
+            <button class="btn--sort">Sort &UpArrowDownArrow;</button>
+          </div>
+          <ul class="university-list">
+            <!-- <li class="university">
+                <p class="university__name"></p>
+                <span>Webpage: </span>
+                <a href ="#" class="university__webpage"></a>
+              </li> -->
+          </ul>
+          <div class="pagination">
+            <button class="btn btn--prev">&larr; Prev</button>
+            <ul class="pagination__list">
+              <li class="pagination__item"><a href="" class="pagination__link"></a></li>
+            </ul>
+            <button class="btn btn--next">Next &rarr;</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
