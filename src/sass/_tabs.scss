@@ -19,7 +19,7 @@
     }
   }
 
-  &__content-box {
+  &__contents {
     background-color: #f5f5f5;
     display: grid;
     grid-auto-flow: column;
@@ -33,5 +33,44 @@
     width: 100%;
     padding: 1.6rem 2.4rem;
     overflow-y: auto;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+      margin-bottom: 1.6rem;
+
+      .search {
+        flex: 1;
+        &__input {
+          width: 100%;
+          font-size: inherit;
+          padding: 0.6rem 1.2rem;
+          border: 1px solid #bbb;
+          border-radius: 1rem;
+          &:focus {
+            outline-color: #333;
+          }
+        }
+      }
+
+      .btn--sort {
+        cursor: pointer;
+        font-size: inherit;
+        font-weight: 600;
+        // color: #fff;
+        border: 1px solid #bbb;
+        border: none;
+        border-radius: 1rem;
+        padding: 0.6rem 1.2rem;
+        background-color: #ccc;
+        transition: all 0.2s;
+        &:hover,
+        &.sorted {
+          color: #fff;
+          background-color: #008000;
+        }
+      }
+    }
   }
 }

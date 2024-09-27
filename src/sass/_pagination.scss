@@ -4,8 +4,29 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.6rem;
+  margin-top: 1.6rem;
 
   font-size: 1.2rem;
+
+  .btn {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 10rem;
+    color: inherit;
+    background-color: #bbb;
+    transition: all 0.2s;
+    &:not(:disabled):hover {
+      color: #111;
+      background-color: #ccc;
+      box-shadow: 0 0.5rem 1rem rgba(#000, 0.1);
+    }
+    &:disabled {
+      color: #777;
+      cursor: not-allowed;
+    }
+  }
 
   &__list {
     display: flex;
